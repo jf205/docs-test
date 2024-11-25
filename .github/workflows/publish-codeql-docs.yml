@@ -20,7 +20,7 @@ jobs:
         rm -r '${{ github.event.inputs.destination }}'/ql-handbook;
         rm -r '${{ github.event.inputs.destination }}'/ql-support;
     - name: Download artifact
-      uses: dawidd6/action-download-artifact@v2
+      uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.DOWNLOAD_ARTIFACT}}
         workflow: __docs-generate-sphinx.yml

@@ -17,7 +17,7 @@ jobs:
       run: |
         rm -r ${{ github.event.inputs.destination }}/codeql-libraries/**;
     - name: Download artifact
-      uses: dawidd6/action-download-artifact@v2
+      uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.DOWNLOAD_ARTIFACT}}
         workflow: __docs-generate-qldoc.yml
